@@ -29,8 +29,9 @@ def get_started():
 
 
 @app.route('/q<int:question_number>')
-def question(question_number):
-    
+def question(question_number, score):
 
-    return render_template('question.html')
+
+
+    return render_template('question.html', score)
 
