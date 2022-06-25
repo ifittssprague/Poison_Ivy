@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="text-center">
+        <h1>Welcome to Poison Ivy Identifier!</h1>
+
+        <p>This site is designed to teach you how to identify poison ivy.</p>
+        <img src="https://www.thespruce.com/thmb/7jTuPYEIz9Q6GqycsB6U7lo8Y04=/4400x3300/smart/filters:no_upscale()/young-leaves-poison-ivy-big-56a5890f3df78cf77288b3b7.jpg"
+        class="img-fluid" alt="Responsive image" width="50%">
+
+    </div>
+
+
+    <div class="text-center">
+        <a href="{{ url_for('get_started')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Get started</a>
+    </div>
+
+
+
+{% endblock %}
